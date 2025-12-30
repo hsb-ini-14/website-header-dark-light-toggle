@@ -28,8 +28,122 @@ const Hero = () => {
                 powered by the latest Tailwind CSS v4. Create stunning user
                 experiences with state-of-the-art theme switching.
               </p>
+              <div className="flex gap-3 items-center">
+                <div className="h-px bg-neutral-300 dark:bg-neutral-700 w-12"></div>
+                <p className="uppercase text-xs tracking-widest text-neutral-500 dark:text-neutral-400 font-medium">
+                  Transition Seamlessly
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-3 lg:gap-4">
+              <button className="px-6 py-3 lg:px-7 lg:py-3.5 rounded-lg bg-neutral-900 hover:bg-black text-white dark:bg-amber-500 dark:hover:bg-amber-600 dark:text-neutral-900 font-medium shadow-lg hover:drop-shadow-neutral-900/20 dark:hover:shadow-amber-500/20 flex items-center transition group">
+                <i className="bx bx-code-alt mr-2 lg:mr-3 text-lg lg:text-xl group-hover:rotate-12 transition-transform"></i>
+                <span>Start Coding</span>
+              </button>
+              <button className="px-6 py-3 lg:px-7 lg:py-3.5 rounded-lg bg-neutral-100 hover:bg-neutral-200 dark:hover:bg-neutral-700 border border-neutral-700 dark:border-neutral-700  dark:bg-neutral-800 text-neutral-900 dark:text-white font-medium flex items-center transition group">
+                <i className="bx bx-book-open mr-2 lg:mr-3 text-lg lg:text-xl opacity-70 group-hover:opacity-100 transition-opacity"></i>
+                <span>Documentation</span>
+              </button>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-5 sm:items-center pt-6 lg:pt-7 border-t border-neutral-200 dark:border-neutral-800">
+              <div className="flex -space-x-3">
+                <img
+                  src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
+                  alt="User"
+                  className="w-9 h-9 lg:w-10 lg:h-10 rounded-full border-2 border-white dark:border-neutral-900 object-cover"
+                />
+                <img
+                  src="https://t4.ftcdn.net/jpg/06/08/55/73/360_F_608557356_ELcD2pwQO9pduTRL30umabzgJoQn5fnd.jpg"
+                  alt="User"
+                  className="w-9 h-9 lg:w-10 lg:h-10 rounded-full border-2 border-white dark:border-neutral-900 object-cover"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+                  alt="User"
+                  className="w-9 h-9 lg:w-10 lg:h-10 rounded-full border-2 border-white dark:border-neutral-900 object-cover"
+                />
+                <span className="flex items-center justify-center w-9 h-9 lg:w-10 lg:h-10 rounded-full border-2 border-white dark:border-neutral-900 bg-neutral-900 dark:bg-amber-500 text-white dark:text-neutral-900 text-xs font-medium">
+                  +5K
+                </span>
+              </div>
+              <div className="space-y-1">
+                <div className="flex items-center">
+                  <i className="bx bxs-star text-amber-500 mr-1"></i>
+                  <i className="bx bxs-star text-amber-500 mr-1"></i>
+                  <i className="bx bxs-star text-amber-500 mr-1"></i>
+                  <i className="bx bxs-star text-amber-500 mr-1"></i>
+                  <i className="bx bxs-star-half text-amber-500 mr-1"></i>
+                  <span className="text-neutral-600 dark:text-neutral-400 text-sm ml-1">
+                    4.8/5
+                  </span>
+                </div>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm">
+                  Trusted by{" "}
+                  <span className="font-bold text-neutral-900 dark:text-white">
+                    5,000+
+                  </span>{" "}
+                  developers worldwide
+                </p>
+              </div>
             </div>
           </div>
+          <div className="flex-1 w-full">
+            <div className="relative">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500 to-indigo-900 rounded-2xl blur-xl opacity-50 animate-pulse"></div>
+              <div className="relative bg-white dark:bg-neutral-900 p-4 lg:p-5 xl:p-6 rounded-2xl shadow-2xl border border-neutral-200 dark:border-neutral-800">
+                <div className="flex items-center justify-between mb-3 lg:mb-4">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 lg:w-3 lg:h-3 rounded-full bg-red-500"></span>
+                    <span className="w-2.5 h-2.5 lg:w-3 lg:h-3 rounded-full bg-amber-500"></span>
+                    <span className="w-2.5 h-2.5 lg:w-3 lg:h-3 rounded-full bg-green-500"></span>
+                  </div>
+                  <div className="text-xs text-neutral-500 dark:text-neutral-400">
+                    dark-mode.jsx
+                  </div>
+                </div>
+                <div className="h-56 md:h-64 lg:66 xl:h-72 rounded-lg bg-neutral-100 dark:bg-neutral-800 overflow-hidden relative">
+                  <img
+                    src="/images/code-light.png"
+                    alt="Code snippet for light mode"
+                    className="w-full h-full object-cover object-top-left dark:hidden"
+                  />
+                  <img
+                    src="/images/code-dark.png"
+                    alt="Code snippet for dark mode"
+                    className="w-full h-full object-cover object-top-left dark:block"
+                  />
+                  <div className="absolute bottom-4 right-4">
+                    <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-gradient-to-r from-amber-500 to-indigo-900 flex items-center justify-center text-white shadow-lg animate-pulse">
+                      <i className="bx bx-brightness-half text-xl lg:text-2xl"></i>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-3 lg:mt-4 flex justify-between items-center">
+                  <div className="flex gap-2">
+                    <span className="px-2.5 py-1 lg:px-3 rounded-full bg-neutral-900 text-amber-400 text-xs font-medium flex items-center">
+                      <i className="bx bxl-tailwind-css mr-1"></i> Tailwind v4
+                    </span>
+                    <span className="px-2.5 py-1 lg:px-3 rounded-full bg-neutral-100 dark:bg-neutral-800 text-indigo-900 dark:text-indigo-400 border border-neutral-200 dark:border-neutral-700 text-xs font-medium flex items-center">
+                      <i className="bx bxl-react mr-1"></i> React
+                    </span>
+                  </div>
+                  <button className="w-8 h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 flex items-center justify-center rounded-full bg-amber-500 text-neutral-900 hover:bg-amber-600 transition">
+                    <i className="bx bx-copy text-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="hidden md:block absolute bottom-8 left-8 lg:bottom-10 lg:left-10 animate-bounce">
+        <div className="bg-neutral-900 text-white px-2.5 py-1.5 rounded-lg text-xs lg:text-sm flex items-center shadow-lg">
+          <i className="bx bx-check-circle mr-1 text-amber-500"></i> Responsive
+        </div>
+      </div>
+      <div className="hidden md:block absolute top-16 right-[15%] lg:top-20 lg:right-[20%] animate-bounce delay-300">
+        <div className="bg-neutral-900 text-white px-2.5 py-1.5 rounded-lg text-xs lg:text-sm flex items-center shadow-lg">
+          <i className="bx bx-check-circle mr-1 text-amber-500"></i> Accessible
         </div>
       </div>
     </div>

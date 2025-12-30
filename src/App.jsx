@@ -2,13 +2,23 @@ import { useEffect, useState } from "react";
 import Hero from "./components/Hero";
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+      return savedTheme === "dark";
+    } else {
+      return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    }
+  });
 
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
 
@@ -30,7 +40,8 @@ const App = () => {
         <div
           className="absolute inset-0 dark:hidden"
           style={{
-            backgroundImage: "radial-gradient(rgba(0,0,0,0.1) 1px, transparent 1px)",
+            backgroundImage:
+              "radial-gradient(rgba(0,0,0,0.1) 1px, transparent 1px)",
             backgroundSize: "20px 20px",
           }}
         ></div>
