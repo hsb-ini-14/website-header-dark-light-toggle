@@ -1,3 +1,6 @@
+import light from '../../public/images/code-light.png'
+import dark from '../../public/images/code-dark.png'
+
 const Hero = () => {
   return (
     <div className="isolate">
@@ -103,12 +106,12 @@ const Hero = () => {
                 </div>
                 <div className="h-56 md:h-64 lg:66 xl:h-72 rounded-lg bg-neutral-100 dark:bg-neutral-800 overflow-hidden relative">
                   <img
-                    src="/images/code-light.png"
+                    src={light}
                     alt="Code snippet for light mode"
                     className="w-full h-full object-cover object-top-left dark:hidden"
                   />
                   <img
-                    src="/images/code-dark.png"
+                    src={dark}
                     alt="Code snippet for dark mode"
                     className="w-full h-full object-cover object-top-left dark:block"
                   />
