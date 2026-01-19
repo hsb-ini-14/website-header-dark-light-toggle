@@ -127,7 +127,7 @@ npm run deploy
 
 ## 🖼️ Preview
 
-_Add a screenshot or GIF of the header component here for better presentation._
+to be added later
 
 ---
 
